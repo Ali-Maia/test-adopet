@@ -28,5 +28,10 @@ describe('Teste de páginas no Adopet', () => {
       cy.visit('https://adopet-frontend-cypress.vercel.app/home');
       cy.get('.header__message').click()  
   })
+
+  it('Verifica imagens dos animais', () =>{
+    cy.visit('https://adopet-frontend-cypress.vercel.app/home');
+    cy.get('.cards').should('be.visible');
+})
   
 });
