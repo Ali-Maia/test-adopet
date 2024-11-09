@@ -4,16 +4,11 @@ describe('Página de login', () => {
     cy.get('[data-test="login-button"]').click();
   })
   it('Deve preencher os campos do login corretamente e autenticar o usuário na página', () => {
-
-    cy.get('[data-test="input-loginEmail"]').type('aninha@email.com');
-    cy.get('[data-test="input-loginPassword"]').type('Senha123');
-    cy.get('[data-test="submit-button"]').click();
+    cy.login('aninha@email.com','Senha123');
   })
 
   it('Deve clicar no botão de mensagem no header e preencher os campos de login corretamente e autenticar o usuário na página', () => {
     cy.get('.header__message').click();
-    cy.get('[data-test="input-loginEmail"]').type('aninha@email.com');
-    cy.get('[data-test="input-loginPassword"]').type('Senha123');
-    cy.get('[data-test="submit-button"]').click();
+    cy.login('aninha@email.com','Senha123');
   })
 })

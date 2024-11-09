@@ -4,10 +4,7 @@ describe('Página de login', () => {
     cy.get('[data-test="login-button"]').click();
   })
   it('Deve preencher os campos do login corretamente e autenticar o usuário na página', () => {
-
-    cy.get('[data-test="input-loginEmail"]').type('anina1234');
-    cy.get('[data-test="input-loginPassword"]').type('1234567');
-    cy.get('[data-test="submit-button"]').click();
+    cy.login('anina1234','1234567');
     cy.contains('Por favor, verifique o email digitado').should('be.visible');
     cy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');
   })
