@@ -42,7 +42,7 @@ Os testes estão organizados de acordo com os principais fluxos do site Adopet:
 - **Navegação**: Verifica a navegação entre as diferentes páginas do site.
 - **Mensagens de Erro**: Assegura que mensagens de erro apropriadas são exibidas para entradas inválidas.
 
-## Integração Contínua
+## Integração Contínua (Em andamento)
 Este projeto está configurado para integração contínua utilizando GitHub Actions. Os testes são executados automaticamente a cada push para garantir a integridade do código.
 
 ## Contribuição
